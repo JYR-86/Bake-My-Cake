@@ -1,0 +1,58 @@
+<!-- <div class="order-section">
+    <div class="order-box" *ngIf="orderData.length" >
+        <div class="col-sm-1">
+            <img class="image" src="../../../../assets/cart-image.jpg" alt="">
+        </div>
+        <div class="col-sm-1">
+            <span>#{{orderObj.id}}</span>
+        </div>
+        <div class="col-sm-1">
+            <span>{{orderObj.name}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>{{orderObj.phone}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>{{orderObj.address}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span [ngClass]="isCol?'color-s':'color-p'">{{message}}</span>
+        </div>
+        <div class="col-sm-2" *ngIf="isResponse">
+            <button  class="btn bt btn-danger" (click)="cancelOrder(orderObj.id)">Cancel Order</button>
+            <button class="btn btn-primary" (click)="orderAccept()">Accept Order</button>
+        </div>
+    </div>
+</div> -->
+<div class="order-section" >
+    <div class="order-box" *ngFor="let order of newOrderArray" #list>
+        <div class="col-sm-1">
+            <img class="image" src="../../../../assets/cart-image.jpg" alt="">
+        </div>
+        <div class="col-sm-1">
+            <span>#{{order.id}}</span>
+        </div>
+        <div class="col-sm-1">
+            <span>{{order.firstName+" "+order.lastName}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>{{order.phone}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>{{order.address.street+" "+order.address.city+" "+order.address.state+" "+order.address.zipCode}}</span>
+        </div>
+        <div class="col-sm-2 items">
+            <div *ngFor="let i of order.items; let t=index">
+                <span>({{t+1}}) {{ i.name}}</span>
+            </div>
+            
+        </div>
+        <div class="col-sm-1" >
+            <span [ngClass]="isCol?'color-s':'color-p'">{{message}}</span>
+        </div>
+        <div class="col-sm-2" >
+            <button class="btn bt btn-danger"  (click)="cancelOrder(order.id)">Cancel Order</button>
+            <button class="btn btn-primary"   (click)="orderAccept(list)">Accept Order</button>
+        </div>
+    </div>
+</div>

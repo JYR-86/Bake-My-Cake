@@ -1,0 +1,28 @@
+<div class="row product-details" *ngIf="itemData">
+    <div class=" bg">
+        <img class="product-img" src="../../../../assets/{{itemData.name}}.jpg" alt="../../../../assets/{{itemData.name}}">
+    </div>
+    <div class="sg">
+        <div class="details">
+            <h1 class="h1">{{itemData.name | titlecase}}</h1>
+            <h2>Price : ${{itemData.price}}</h2>
+            <h3>isVeg : {{itemData.isVeg | titlecase}}<span class="product-color" [ngClass]="itemData.isVeg==='veg'?'green':'red'" ></span>
+        </h3>
+            <h3>Category : {{itemData.category | titlecase}}</h3>
+            <h3>Rating : {{itemData.rating}}</h3>
+            <h3>TimeToCook : {{itemData.time}}</h3>
+            <div >
+                <!-- <button class="form-button"  (click)="goCart()">Buy Now</button> -->
+                
+                <button class="form-button"  (click)="addItemToCart()">Add to Cart</button>
+                <div class="quantity-group">
+                    <button (click)="handleQty('min')">-</button>
+                    <input type="text" value="{{itemQty}}" />
+                    <button (click)="handleQty('plus')">+</button>
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+.card-view{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.list-chip{
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+mat-chip:hover{
+    opacity: 1;
+    background-color: rgb(231, 110, 130);
+    box-shadow: 1px 1px 1px 1px gray;
+}

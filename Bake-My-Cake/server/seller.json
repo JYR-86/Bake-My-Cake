@@ -1,0 +1,46 @@
+{
+  "seller": [
+    {
+      "name": "Jayvir Singh",
+      "password": "aaaaaaaa",
+      "email": "sjayvir09@gmail.com",
+      "uniqueCode": "JAYRR20",
+      "id": 1
+    },
+    {
+      "name": "Jayvir Singh",
+      "password": "rrrrrrrr",
+      "email": "sjayvir09@gmail.com",
+      "uniqueCode": "JAYRR27",
+      "id": 2
+    },
+    {
+      "name": "Rajvardhan",
+      "password": "raj123",
+      "email": "raj123@test.com",
+      "uniqueCode": "RAJRA71",
+      "id": 3
+    },
+    {
+      "name": "Ravi Raj",
+      "password": "abc123",
+      "email": "ravi12@test.com",
+      "uniqueCode": "RAVAB74",
+      "id": 4
+    },
+    {
+      "name": "Neha",
+      "password": "abc123",
+      "email": "neha12@test.com",
+      "uniqueCode": "NEHAB40",
+      "id": 5
+    },
+    {
+      "name": "Jayvir Singh",
+      "password": "wwwwe123",
+      "email": "sjayvir@gmail.com",
+      "uniqueCode": "JAYWW47",
+      "id": 6
+    }
+  ]
+}

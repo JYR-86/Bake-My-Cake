@@ -1,0 +1,35 @@
+<div class="add-prducts">
+    <h1 class="h1">Update Items</h1>
+    <p class="message-p">{{message}}</p>
+    <div class="items">
+        <form #myForm="ngForm" (ngSubmit)="onEditItem(myForm.value)">
+            <mat-form-field appearance="fill">
+                <mat-label>Enter Item Name</mat-label>
+                <input matInput ngModel="{{itemData?.name}}" name="name">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Enter Item Price</mat-label>
+                <input matInput ngModel="{{itemData?.price}}" type="number" name="price">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Enter Item Category</mat-label>
+                <input matInput ngModel="{{itemData?.category}}" name="category">
+            </mat-form-field>
+            <mat-radio-group aria-label="Select an option" name="isVeg" ngModel="{{itemData?.isVeg}}">
+                <mat-label class="tite">Item Type: </mat-label>
+                <mat-radio-button value="veg">Veg</mat-radio-button>
+                <mat-radio-button value="non-veg">Non-veg</mat-radio-button>
+            </mat-radio-group>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Item Rating</mat-label>
+                <input matInput ngModel="{{itemData?.rating}}" type="number" name="rating">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Time to Cook</mat-label>
+                <input matInput ngModel="{{itemData?.time}}" name="time">
+            </mat-form-field>
+            <button class="btn" type="submit" mat-raised-button color="accent">Update</button>
+        </form>
+    </div>
+</div>

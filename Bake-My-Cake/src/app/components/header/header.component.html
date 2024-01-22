@@ -1,0 +1,23 @@
+<div class="header">
+    <h1><a class="h1" routerLink="">Bake My Cake</a></h1>
+    <div class="nav-box" [ngSwitch]="UIType" [ngClass]="UIType==='default'?'nav-box':'nav-box-s'">
+        <ul *ngSwitchCase="'default'">
+            <li><a routerLink="">Home</a></li>
+            <li><a routerLink="user-login">Login</a></li>
+            <li><a routerLink="seller">Seller</a></li>
+            <li><a routerLink="#">Contacts</a></li>
+        </ul>
+        <ul *ngSwitchCase="'user'">
+            <li><a routerLink="">Home</a></li>
+            <li><a routerLink="cart">Cart({{cartItems}})</a></li>
+            <li><a (click)="userLogout()">Logout</a></li>
+            <li class="user-sign"><a>{{userSignature | titlecase}}</a></li>
+        </ul>
+        <ul *ngSwitchCase="'seller'" >
+            <li><a routerLink="seller-add-products">Add Item</a></li>
+            <li><a routerLink="seller-item-list">Item List</a></li>
+            <li><a (click)="onLogout()">Logout</a></li>
+            <li class="user-sign"><a routerLink="seller-home" >{{sellerSignature | titlecase}}</a></li>
+        </ul>
+    </div>
+</div>

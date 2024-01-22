@@ -1,0 +1,26 @@
+<div class="food-card">
+    <a routerLink="/user-home/{{item?.id}}">
+        <img class="food-image" src="../../../../assets/{{item?.name}}.jpg" alt="{{item?.name | titlecase}}">
+    </a>
+    <div class="food-content">
+        <div class="box-1">
+            <div class="food-name"><a routerLink="/user-home/{{item?.id}}">{{item?.name | titlecase}}</a></div>
+            <div class="food-rating">
+                {{item?.rating}} <span class="fa fa-star checked"></span>
+            </div>
+        </div>
+        <div class="box-2">
+            <h4>{{item?.category | titlecase}}</h4>
+            <div class="food-price">${{item?.price}}</div>
+        </div>
+        <div class="box-3">
+            <div class="veg">
+                <h5>{{vegValue | titlecase}}</h5>
+                &nbsp;<i class="fa fa-circle" [ngClass]="item?.isVeg==='veg'?'green':'red'"></i>
+            </div>
+            <div class="time-to-cook">
+                <i class="fa fa-clock-o"> {{item?.time}}</i>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<app-search (searchEvent)="searchFood($event)"></app-search>
+
+<mat-chip-listbox class="list-chip">
+    <mat-chip value="All" #all (click)="getTag(all.value)">
+        All
+    </mat-chip>
+    <mat-chip value="Cake" #cake (click)="getTag(cake.value)">
+        <img matChipAvatar src="../../../assets/Casata Cake.jpg"
+             />
+            Cake
+    </mat-chip>
+    <mat-chip value="Cupcake" #cupcake (click)="getTag(cupcake.value)">
+        <img matChipAvatar src="../../../assets/Berries Summer Cupcakes.jpg"
+             />
+        Cupcake
+    </mat-chip>
+    <mat-chip value="Brownie" #brownie (click)="getTag(brownie.value)">
+        <img matChipAvatar src="../../../assets/Brownies Different Flavor.jpg"
+             />
+        Brownie
+    </mat-chip>
+    <mat-chip value="Cookie" #cookie (click)="getTag(cookie.value)">
+        <img matChipAvatar src="../../../assets/Butter Cookies.jpg"
+             />
+        Cookie
+    </mat-chip>
+    <mat-chip value="Bonbon" #bonbon (click)="getTag(bonbon.value)">
+        <img matChipAvatar src="../../../assets/Chocolate Bonbons.jpg"
+             />
+        Bonbon
+    </mat-chip>
+    <mat-chip value="Berrie" #berrie (click)="getTag(berrie.value)">
+        <img matChipAvatar src="../../../assets/Berries Summer Cupcakes.jpg"
+             />
+        Berrie
+    </mat-chip>
+    <mat-chip value="Muffin" #muffin (click)="getTag(muffin.value)">
+        <img matChipAvatar src="../../../assets/Muffin Ghost.jpg"
+             />
+        Muffin
+    </mat-chip>
+</mat-chip-listbox>
+
+<div class="card-view">
+    <app-card *ngFor="let f of Foods" [item]="f"></app-card>
+</div>

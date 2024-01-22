@@ -1,0 +1,33 @@
+.search-container {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  position: relative;
+  bottom: 41px;
+  left: 282px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 0px 25px 25px 0px;
+  background-color: rgb(154, 203, 245);
+  border-color: #fff;
+}

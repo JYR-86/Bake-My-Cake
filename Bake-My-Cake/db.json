@@ -1,0 +1,403 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "Items": [
+    {
+      "name": "Berries Summer Cupcakes",
+      "price": 45,
+      "category": "Cupcake",
+      "isVeg": "veg",
+      "rating": 4,
+      "time": "10-20",
+      "id": 1
+    },
+    {
+      "name": "Brownies Different Flavor",
+      "price": 45,
+      "category": "Brownie",
+      "isVeg": "veg",
+      "rating": 4,
+      "time": "10-20",
+      "id": 2
+    },
+    {
+      "name": "Butter Cookies",
+      "price": 45,
+      "category": "Cookie",
+      "isVeg": "veg",
+      "rating": 4,
+      "time": "20-25",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Cherry Jelly Cheesecake",
+      "category": "Cake",
+      "rating": 4.8,
+      "price": 30,
+      "time": "40-50",
+      "isVeg": "veg"
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Blueberries Cake",
+      "category": "Cake",
+      "rating": 4.3,
+      "price": 35,
+      "time": "35-45",
+      "isVeg": "veg"
+    },
+    {
+      "id": 6,
+      "name": "Chocolate Bonbons",
+      "category": "Bonbon",
+      "rating": 3.7,
+      "price": 25,
+      "time": "25-35",
+      "isVeg": "veg"
+    },
+    {
+      "id": 7,
+      "name": "Chocolate Cookies",
+      "category": "Cookie",
+      "rating": 4.2,
+      "price": 18,
+      "time": "15-20",
+      "isVeg": "veg"
+    },
+    {
+      "id": 8,
+      "name": "Chocolate Cupcake",
+      "category": "Cupcake",
+      "rating": 4.6,
+      "price": 15,
+      "time": "20-30",
+      "isVeg": "veg"
+    },
+    {
+      "id": 9,
+      "name": "Chocolate Summer Berries",
+      "category": "Berrie",
+      "rating": 4.7,
+      "price": 40,
+      "time": "30-40",
+      "isVeg": "veg"
+    },
+    {
+      "id": 10,
+      "name": "Classic Cheesecake",
+      "category": "Cake",
+      "rating": 4.9,
+      "price": 50,
+      "time": "40-50",
+      "isVeg": "veg"
+    },
+    {
+      "id": 11,
+      "name": "Cookies Cream Cake",
+      "category": "Cake",
+      "rating": 4.4,
+      "price": 28,
+      "time": "35-45",
+      "isVeg": "veg"
+    },
+    {
+      "id": 12,
+      "name": "Easter Cupcakes",
+      "category": "Cupcake",
+      "rating": 4,
+      "price": 22,
+      "time": "25-30",
+      "isVeg": "veg"
+    },
+    {
+      "id": 13,
+      "name": "Fruit Cake",
+      "category": "Cake",
+      "rating": 4.8,
+      "price": 38,
+      "time": "45-55",
+      "isVeg": "veg"
+    },
+    {
+      "id": 14,
+      "name": "Isometric chocolate brownies",
+      "category": "Brownie",
+      "rating": 3.5,
+      "price": 42,
+      "time": "30-40",
+      "isVeg": "non-veg"
+    },
+    {
+      "id": 15,
+      "name": "Monster Theme Cake",
+      "category": "Cake",
+      "rating": 4.2,
+      "price": 60,
+      "time": "50-60",
+      "isVeg": "veg"
+    },
+    {
+      "id": 16,
+      "name": "Muffin Devil Horns",
+      "category": "Muffin",
+      "rating": 4.1,
+      "price": 16,
+      "time": "20-25",
+      "isVeg": "veg"
+    },
+    {
+      "id": 17,
+      "name": "Muffin Ghost",
+      "category": "Muffin",
+      "rating": 3.9,
+      "price": 14,
+      "time": "15-20",
+      "isVeg": "veg"
+    },
+    {
+      "name": "Casata Cake",
+      "category": "Cake",
+      "price": 60,
+      "rating": 4,
+      "time": "30-35",
+      "isVeg": "veg",
+      "id": 18
+    }
+  ],
+  "seller": [
+    {
+      "name": "Jayvir",
+      "password": "abc@123",
+      "email": "abc@test.com",
+      "uniqueCode": "JAYAB42",
+      "id": 1
+    },
+    {
+      "name": "manav",
+      "password": "abc@1234",
+      "email": "manav@test.com",
+      "uniqueCode": "MANAB4",
+      "id": 2
+    },
+    {
+      "name": "Jayvir",
+      "password": "abc@1234",
+      "email": "abc@test.com",
+      "uniqueCode": "JAYAB81",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "firstName": "Jayvir",
+      "lastName": "Singh",
+      "username": "JayvirSingh8895",
+      "password": "abc@1234",
+      "confirmPassword": "abc@1234",
+      "gender": "male",
+      "age": "22",
+      "email": "abc@test.com",
+      "phone": "8895142534",
+      "address": {
+        "street": "Pushpanjali Phase-3",
+        "city": "Agra",
+        "state": "UttarPradesh",
+        "zipCode": "282010"
+      },
+      "id": 1
+    },
+    {
+      "firstName": "Anjali",
+      "lastName": "Verma",
+      "username": "AnjaliVerma9990",
+      "password": "abc@1234",
+      "confirmPassword": "abc@1234",
+      "gender": "male",
+      "age": "55",
+      "email": "anjali@test.com",
+      "phone": "9990654321",
+      "address": {
+        "street": "BigBazar Mall street",
+        "city": "Delhi",
+        "state": "Delhi",
+        "zipCode": "202820"
+      },
+      "id": 2
+    },
+    {
+      "firstName": "Anil",
+      "lastName": "Verma",
+      "username": "AnilVerma8790",
+      "password": "abc@1234",
+      "confirmPassword": "abc@1234",
+      "gender": "male",
+      "age": "31",
+      "email": "anil@test.com",
+      "phone": "8790654321",
+      "address": {
+        "street": "BigBazar Mall street",
+        "city": "Delhi",
+        "state": "Delhi",
+        "zipCode": "202820"
+      },
+      "id": 3
+    },
+    {
+      "firstName": "Aditya",
+      "lastName": "Singh",
+      "username": "AdityaSingh7895",
+      "password": "abc@1234",
+      "confirmPassword": "abc@1234",
+      "gender": "male",
+      "age": "25",
+      "email": "aditya@test.com",
+      "phone": "7895142534",
+      "address": {
+        "street": "Pushpanjali Phase-3",
+        "city": "Agra",
+        "state": "UttarPradesh",
+        "zipCode": "282010"
+      },
+      "id": 4
+    }
+  ],
+  "cart": [
+    {
+      "name": "Berries Summer Cupcakes",
+      "price": 55,
+      "category": "Cupcake",
+      "isVeg": "veg",
+      "rating": 3.5,
+      "time": "10-20",
+      "qty": 1,
+      "itemId": 1,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "Chocolate Bonbons",
+      "category": "Bonbon",
+      "rating": 3.7,
+      "price": 25,
+      "time": "25-35",
+      "isVeg": "veg",
+      "qty": 1,
+      "itemId": 6,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "name": "Butter Cookies",
+      "price": 45,
+      "category": "Cookie",
+      "isVeg": "veg",
+      "rating": 4,
+      "time": "20-25",
+      "qty": 1,
+      "itemId": 3,
+      "userId": 2,
+      "id": 3
+    },
+    {
+      "name": "Brownies Different Flavor",
+      "price": 45,
+      "category": "Brownie",
+      "isVeg": "veg",
+      "rating": 4,
+      "time": "10-20",
+      "qty": 1,
+      "itemId": 2,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "name": "Butter Cookies",
+      "price": 45,
+      "category": "Cookie",
+      "isVeg": "veg",
+      "rating": 4,
+      "time": "20-25",
+      "qty": 1,
+      "itemId": 3,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "name": "Chocolate Blueberries Cake",
+      "category": "Cake",
+      "rating": 4.3,
+      "price": 35,
+      "time": "35-45",
+      "isVeg": "veg",
+      "qty": 1,
+      "itemId": 5,
+      "userId": 4,
+      "id": 6
+    },
+    {
+      "name": "Muffin Ghost",
+      "category": "Muffin",
+      "rating": 3.9,
+      "price": 14,
+      "time": "15-20",
+      "isVeg": "veg",
+      "qty": 2,
+      "itemId": 17,
+      "userId": 4,
+      "id": 7
+    }
+  ],
+  "orders": [
+    {
+      "firstName": "Anil",
+      "lastName": "Verma",
+      "username": "AnilVerma8790",
+      "gender": "male",
+      "age": "31",
+      "email": "anil@test.com",
+      "phone": "8790654321",
+      "address": {
+        "street": "BigBazar Mall street",
+        "city": "Delhi",
+        "state": "Delhi",
+        "zipCode": "202820"
+      },
+      "price": 45,
+      "discount": 4.5,
+      "tax": 4.5,
+      "delivery": 20,
+      "total": 65,
+      "items": [
+        {
+          "name": "Berries Summer Cupcakes",
+          "price": 45,
+          "category": "Cupcake",
+          "isVeg": "veg",
+          "rating": 4,
+          "time": "10-20",
+          "qty": 1,
+          "itemId": 1,
+          "userId": 3,
+          "id": 8
+        }
+      ],
+      "id": 1
+    }
+  ]
+}

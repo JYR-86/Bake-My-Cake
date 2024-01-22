@@ -1,0 +1,50 @@
+<div class="itemList">
+    <h1>Item List</h1>
+    <p class="message-p">{{removeMessage}}</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Rating</th>
+                <th>Time</th>
+                <th>isVeg</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of ItemList">
+                <td><img src="../../../assets/{{item.name}}.jpg" alt="{{item.name | titlecase}}"></td>
+                <td>{{item.name | titlecase}}</td>
+                <td>{{item.category | titlecase}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.rating}}</td>
+                <td>{{item.time}}</td>
+                <td>{{item.isVeg | titlecase}}</td>
+                <td><fa-icon class="icons" [icon]="removeIcon" (click)="deleteItem(item.id)"></fa-icon>
+                    <a routerLink="/seller-update-items/{{item.id}}" style="color: black;">
+                        <fa-icon class="icons" [icon]="editIcon"></fa-icon>
+                    </a>
+                </td>
+            </tr>
+    
+    
+            <!-- <tr *ngFor="let item of newItemList">
+                        <td><img src="../../../assets/{{item.name}}.jpg" alt="{{item.name | titlecase}}"></td>
+                        <td>{{item.name | titlecase}}</td>
+                        <td>{{item.category | titlecase}}</td>
+                        <td>{{item.price}}</td>
+                        <td>{{item.rating}}</td>
+                        <td>{{item.time}}</td>
+                        <td>{{item.isVeg | titlecase}}</td>
+                        <td><fa-icon class="icons" [icon]="removeIcon" (click)="deleteItem(item.id)"></fa-icon>
+                            <a routerLink="/seller-update-items/{{item.id}}" style="color: black;">
+                                <fa-icon class="icons" [icon]="editIcon"></fa-icon>
+                            </a>
+                        </td>
+                    </tr> -->
+        </tbody>
+    </table>
+</div>

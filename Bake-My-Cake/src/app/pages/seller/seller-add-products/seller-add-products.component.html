@@ -1,0 +1,52 @@
+<div class="seller-page">
+    <div class="add-prducts">
+        <h1 class="h1">Add New Items</h1>
+        <p class="message-p">{{message}}</p>
+        <div class="items">
+            <form #myForm="ngForm" (ngSubmit)="onAddItem(myForm.value)">
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter Item Name</mat-label>
+                    <input matInput  ngModel name="name" required>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter Item Price</mat-label>
+                    <input matInput type="number" ngModel name="price" required>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter Item Category</mat-label>
+                    <input matInput ngModel name="category" required>
+                </mat-form-field>
+                <mat-radio-group aria-label="Select an option" name="isVeg" ngModel required>
+                    <mat-label class="tite">Item Type: </mat-label>
+                    <mat-radio-button  value="veg">Veg</mat-radio-button>
+                    <mat-radio-button  value="non-veg">Non-veg</mat-radio-button>
+                </mat-radio-group>
+    
+                <mat-form-field appearance="fill">
+                    <mat-label >Item Rating</mat-label>
+                    <input matInput ngModel type="number" name="rating" required>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Time to Cook</mat-label>
+                    <input matInput ngModel name="time" required>
+                </mat-form-field>
+                <button class="btn" type="submit" mat-raised-button [disabled]="myForm.invalid" color="accent">Add Item</button>
+            </form>
+        </div>
+    </div>
+    <div class="image-view">
+        <ngb-carousel *ngIf="popItemImage" class="carousel-container">
+            <ng-template *ngFor="let item of popItemImage" ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <a routerLink="/details/{{item.id}}"> <img class="product-header-image"
+                            src="../../../../assets/{{item.name}}.jpg" alt="Random first slide">
+                    </a>
+                </div>
+                <div class="carousel-caption">
+                    <h3>{{item.name}}</h3>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+
+</div>
